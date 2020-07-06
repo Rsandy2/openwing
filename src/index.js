@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
+import Pexels from './components/Pexels';
 
 
 ReactDOM.render(
-  <App />, document.querySelector('#root'));
+  <Pexels />, document.querySelector('#root'));
 
 
 

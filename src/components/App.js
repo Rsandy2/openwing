@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './components/Person';
+import Person from './Person';
 
 class App extends Component { 
   
@@ -16,7 +16,7 @@ class App extends Component {
       status: 'Friend',
       name: 'Jaewon',
     },
-    {
+            {
       id: 3,
       status: 'Friend',
       name: 'Raneem',
