@@ -1,9 +1,30 @@
-.post_container {
+.post__container {
+    max-width: 500px;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    margin-left: 20px;
 
+    /* filter: drop-shadow(0 0 20px #000000); */
+    /* filter: drop-shadow(0 0 30px #333); */
+    box-shadow: 8px 8px 10px #e0e0e0, -2px -2px 15px #ffffff;
+
+}
+
+.post__header {
+    padding: .5rem;
+    
 }
 
 .post__image {
     object-fit: contain;
     width: 100%;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
 
+}
+
+.post__text {
+    
+    object-fit: contain;
+    padding: 2rem;
 }

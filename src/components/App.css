@@ -4,7 +4,7 @@
 
 .app__header{
   object-fit: contain; /*Maintain Aspect Ratio */
-  padding: 20px;
+  padding: 1rem;
   background-color: #fafafa;
   border-bottom: 1px solid #EFEFEF;
   display: flex;
@@ -16,3 +16,6 @@
   height: 100vh;
 }
 
+.post{
+  display: flex;
+}
