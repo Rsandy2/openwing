@@ -1,48 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person';
+import Post from './Post'; 
 
 class App extends Component { 
-  
-  state = {
-    friends: [
-    {
-      id: 1,
-      status: 'Friend',
-      name: 'Lily',
-  },
-  {
-      id: 2,
-      status: 'Friend',
-      name: 'Jaewon',
-    },
-            {
-      id: 3,
-      status: 'Friend',
-      name: 'Raneem',
-    }
-  ]
-}
-  render(){
-    const { friends } = this.state;
-    
-  return (
-      
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">      {
-        friends.map((person) =>(
-          <Person
-          id = {person.id}
-          name = {person.name}
-          status = {person.status}
-          />
-          ))
-      }
-        </header>
+      <div className="app__header">
+        {/* Header */}
+          {/* <img
+            className="app__headerImage"
+            src="https://img.icons8.com/ios/50/000000/wing.png"
+            alt="..." /> */}
+      
+      <h1>OpenWing</h1>
 
-    </div>
-  )
-  } 
+      </div>
+         
+        {/* Post */}
+        <Post />
+        {/* Post */}
+      </div>
+    )
+  }
 } 
 
 export default App;
