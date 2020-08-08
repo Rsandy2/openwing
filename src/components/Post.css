@@ -1,8 +1,11 @@
 .post__container {
-    max-width: 500px;
+    max-width: 85vw;
+    min-width: 200px;
     background-color: #ffffff;
     border: 1px solid lightgray;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    /* margin-bottom: 35px; */
+    margin: 20px 0 35px 20px;
 
     /* filter: drop-shadow(0 0 20px #000000); */
     /* filter: drop-shadow(0 0 30px #333); */

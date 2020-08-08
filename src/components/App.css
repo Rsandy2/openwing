@@ -5,17 +5,20 @@
 .app__header{
   object-fit: contain; /*Maintain Aspect Ratio */
   padding: 1rem;
-  background-color: #fafafa;
+  
+  
+  background-color: #ffffff;
   border-bottom: 1px solid #EFEFEF;
   display: flex;
 }
 
 .App {
 
-  background-color: #ffffff;
+  background-color: #fafafa;
   height: 100vh;
 }
 
 .post{
   display: flex;
+  flex-direction: column;
 }

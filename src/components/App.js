@@ -18,8 +18,12 @@ class App extends Component {
       </div>
          <div className="post">
         {/* Post */}
-        <Post />
-        <Post />
+        <Post 
+        postID="Fox News" 
+        imageUrl="https://images3.alphacoders.com/108/thumb-1920-1085992.jpg"
+        postDesc="s" />
+        
+        {/* <Post /> */}
         {/* Post */}
         </div>
       </div>
