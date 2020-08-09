@@ -1,27 +1,51 @@
-import React, { Component } from 'react';
-import './App.css';
+// import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { Navbar, NavItem } from './Navbar';
 import Post from './Post'; 
+import './App.css';
 
-class App extends Component { 
-  render() {
-    return (
+ 
+function App() {
+  const [posts, setPosts] = useState([
+    {
+        postID: "FOX NEWS" ,
+        imageUrl: "https://images3.alphacoders.com/108/thumb-1920-1085992.jpg",
+        postDesc: "People"
+    },
+    {
+        postID: "MSNBC",
+        imageUrl: "https://images2.alphacoders.com/108/thumb-1920-1085635.jpg",
+        postDesc: "Reports"
+    }
+  ])
+  return (
     <div className="App">
       <div className="app__header">
         {/* Header */}
-          {/* <img
-            className="app__headerImage"
-            src="https://img.icons8.com/ios/50/000000/wing.png"
-            alt="..." /> */}
-      
-      <h1>Openwing</h1>
 
+         <h1>Openwing</h1>
+ 
+      <Navbar>
+        <NavItem item_text="Start"/>
+        <NavItem item_text="Start"/>
+        <NavItem item_text="Start"/>
+      </Navbar>
+
+      
       </div>
          <div className="post">
         {/* Post */}
-        <Post 
-        postID="Fox News" 
-        imageUrl="https://images3.alphacoders.com/108/thumb-1920-1085992.jpg"
-        postDesc="s" />
+
+            {
+              posts.map(post => (
+                <Post 
+                  postID={post.postID} 
+                  imageUrl={post.imageUrl}
+                  postDesc={post.postDesc}
+                />))
+            }
+
+     
         
         {/* <Post /> */}
         {/* Post */}
@@ -29,6 +53,8 @@ class App extends Component {
       </div>
     )
   }
-} 
+
+ 
+
 
 export default App;

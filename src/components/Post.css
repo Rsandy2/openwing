@@ -10,12 +10,18 @@
     /* filter: drop-shadow(0 0 20px #000000); */
     /* filter: drop-shadow(0 0 30px #333); */
     box-shadow: 8px 8px 10px #e0e0e0, -2px -2px 15px #ffffff;
-
+    
 }
 
 .post__header {
     padding: .5rem;
+    display: flex;
     
+    
+}
+
+.post__Avatar {
+    margin-right: .4rem;
 }
 
 .post__image {

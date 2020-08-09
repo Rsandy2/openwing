@@ -4,12 +4,11 @@
 
 .app__header{
   object-fit: contain; /*Maintain Aspect Ratio */
-  padding: 1rem;
-  
-  
+  padding: 0 1rem;
   background-color: #ffffff;
   border-bottom: 1px solid #EFEFEF;
   display: flex;
+  height: var(--nav__size);
 }
 
 .App {
