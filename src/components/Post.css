@@ -29,7 +29,13 @@
     width: 100%;
     border-top: 1px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
 
+}
+
+.post__image:hover {
+    transform: scale(1.005);
 }
 
 .post__text {

@@ -20,4 +20,19 @@
 .post{
   display: flex;
   flex-direction: column;
+ 
+}
+
+.openwing-header-main--logo_container {
+    width: 100px;
+    height: 13px;
+    /* text-indent: -999em; */
+    display: block;
+    /* overflow: hidden; */
+    /* background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: none;
+    background-image: url(https://svgshare.com/s/N_H); */
 }

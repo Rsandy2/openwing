@@ -22,9 +22,15 @@ function App() {
     <div className="App">
       <div className="app__header">
         {/* Header */}
-
-         <h1>Openwing</h1>
- 
+        <h1 className="openwing-header-main--logo_container">
+         <a
+            href="https://www.openwing.dev"
+            className="#"
+            title="Openwing">
+              Openwing
+          </a>
+        </h1>
+        
       <Navbar>
         <NavItem item_text="Start"/>
         <NavItem item_text="Start"/>
