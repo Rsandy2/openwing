@@ -10,8 +10,8 @@ const artists = {
   yokeLore: "7FU0xCgmSYQEiBeevUqQ4S",
 };
 
-clientId = "155d87e0ee2d4b9bbeb1fb6a7dd5a2dc";
-clientSecret = "7a4c2d458cd746208208351530df4436";
+clientId = "";
+clientSecret = "";
 
 _getToken = () => {
   return fetch("https://accounts.spotify.com/api/token", {
