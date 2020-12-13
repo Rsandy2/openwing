@@ -1,28 +1,30 @@
-import React from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { Nav } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+function Navbar() {
+  return (
+    //   <nav className="navbar">
+    //     <ul className="navbar__container">
+    //       <Link to="/" className="navbar__logo">
+    //         {/* {props.children} */}
+    //         OpenNews
+    //       </Link>
+    //     </ul>
+    //   </nav>
+    <Nav className="justify-content-center" activeKey="/home">
+      <Nav.Item>
+        <Nav.Link href="/home">TEST</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-1">TEST</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-2">TEST</Nav.Link>
+      </Nav.Item>
+    </Nav>
+  );
+}
 
-
-function Navbar(props) {
-    return (
-      <nav className="navbar">
-        <ul className="navbar__nav">
-           { props.children }
-        </ul>
-      </nav>
-    );
-  }
-
-  function NavItem(props) {
-      return (
-          <li className="nav__item">
-              <a href="#" className="nav__item__text">
-                  <span>{props.item_text}</span>
-              </a>
-          </li>
-      );
-  }
-
-  export {
-      Navbar,
-      NavItem
-  }
+export default Navbar;
